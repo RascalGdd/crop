@@ -19,5 +19,5 @@ conda activate myenv
 
 # Run your python code
 # For single GPU use this
-CUDA_VISIBLE_DEVICES=0 python test.py  --name crop
+CUDA_VISIBLE_DEVICES=0 python compute_weights.py  --name crop
 
