@@ -69,7 +69,8 @@ class MatchedCrops(PairedDataset):
 		valid_src_crops, valid_dst_crops = [], []
 		valid_ids = []
 		for i, (sc, dc) in tqdm(enumerate(zip(self.src_crops, self.dst_crops))):
-			sc = ((str(path_folder_fake_label)+"\\"+sc[0].split("\\")[-1]),sc[1],sc[2],sc[3],sc[4])
+			# sc = ((str(path_folder_fake_label)+"\\"+sc[0].split("\\")[-1]),sc[1],sc[2],sc[3],sc[4])
+			sc = ((str(path_folder_fake_label) + "/" + sc[0].split("/")[-1]), sc[1], sc[2], sc[3], sc[4])
 			if self._source_dataset.get_by_path(sc[0]) is not None:
 				valid_src_crops.append(sc)
 				valid_dst_crops.append(dc)
