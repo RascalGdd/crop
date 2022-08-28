@@ -10,7 +10,7 @@ if __name__ == '__main__':
     out = match_path
     file_src = fake_feature_path
     file_dst = real_feature_path
-    k = 5
+    k = 10
 
 
     features_ref = np.load(file_src)['crops'].astype(np.float32)
