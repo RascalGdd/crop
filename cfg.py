@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 
 labels = []
-path_lab = Path(r"C:\Users\guodi\Desktop\gtfine")
+path_lab = Path(r"/data/public/cityscapes/gtfine")
 for mode in list(path_lab.iterdir()):
     if mode.stem == "test":
         continue
@@ -26,7 +26,7 @@ file_list_fake = list(path_folder_fake.iterdir())
 
 # for i in city_list:
 #     file_list_real += list((path_folder_real/i).iterdir())
-out_dir = Path("/no_backups/s1422/cropdata")
+out_dir = Path("/no_backups/s1422/cropdata_kvd")
 fake_path = Path(out_dir/"crop_fake.csv")
 real_path = Path(out_dir/"crop_real.csv")
 fake_feature_path = Path(out_dir/"crop_fake.npz")
