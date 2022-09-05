@@ -2,7 +2,7 @@ from pathlib import Path
 import os
 
 labels = []
-path_lab = Path(r"/data/public/cityscapes/gtfine")
+path_lab = Path(r"/data/public/cityscapes/gtFine")
 for mode in list(path_lab.iterdir()):
     if mode.stem == "test":
         continue
