@@ -3,14 +3,14 @@ import os
 import PIL.Image as Image
 import numpy as np
 import cv2
+from cfg import *
 
 def crop(img, r0, r1, c0, c1):
     """ Return cropped patch from image tensor(s). """
 
     return img[r0:r1, c0:c1]
 
-path = os.path.join(r"C:\Users\guodi\Desktop\01_labels\cropdata\matched_crop.csv")
-data = pd.read_csv(path)
+data = pd.read_csv(matched_crop_path)
 droplist = []
 for i in range(data.shape[0]):
     path1, r0, r1, c0, c1 = data.iloc[i][0:5]
