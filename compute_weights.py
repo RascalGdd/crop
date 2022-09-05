@@ -8,10 +8,10 @@ from filter import load_matching_crops
 from cfg import *
 
 
-width = 957
-height = 526
+width = 752
+height = 408
 
-src_crops,_ = load_matching_crops(matched_crop_path)
+src_crops,_ = load_matching_crops(matched_crop_path_kvd)
 
 d = np.zeros((height, width), dtype=np.int32)
 print('Computing density...')
