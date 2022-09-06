@@ -34,5 +34,5 @@ for i in range(data.shape[0]):
 
 data.drop(droplist, inplace=True)
 data.reset_index(drop=True, inplace=True)
-data.to_csv(r"C:\Users\guodi\Desktop\01_labels\cropdata\matched_crop_kvd.csv")
+data.to_csv(matched_crop_path_kvd)
 
